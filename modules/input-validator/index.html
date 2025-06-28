@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SentraShield | Secure Input Form</title>
+  <script defer src="input-validator.js"></script>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+    input, textarea { width: 100%; padding: 10px; margin: 8px 0; }
+    .warning { color: red; font-weight: bold; }
+    .success { color: green; font-weight: bold; }
+    button { padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <h1>🛡️ SentraShield: Secure Input Validator</h1>
+
+  <form id="secureForm">
+    <label for="username">Username</label>
+    <input type="text" id="username" required>
+
+    <label for="comment">Comment</label>
+    <textarea id="comment" rows="4" required></textarea>
+
+    <div id="feedback" class="warning"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
