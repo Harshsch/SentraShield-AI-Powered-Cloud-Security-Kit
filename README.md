@@ -1,4 +1,16 @@
-sentrashield/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <h1>📁 SentraShield – Project Folder Structure</h1>
+  <p><strong>AI-Powered Cloud Security Suite</strong><br />
+     Modular · Free-Tier Friendly · Serverless · DevSecOps Ready
+  </p>
+
+  <pre><code>sentrashield/
 ├── README.md                          # Project overview and usage instructions
 ├── LICENSE                            # Open-source license (e.g., MIT or Apache 2.0)
 │
@@ -36,6 +48,16 @@ sentrashield/
 │   ├── architecture-diagram.png       # System architecture or component flow
 │   ├── research-outline.md            # Paper draft or journal write-up
 │   └── patent-draft.md                # Initial outline for patent submission
+</code></pre>
+
+  <p><strong>Maintained by:</strong> Harsh Chavan<br />
+     <a href="mailto:meharshchavan@gmail.com">meharshchavan@gmail.com</a> ·
+     <a href="https://linkedin.com/in/harshchavan" target="_blank">LinkedIn</a>
+  </p>
+</body>
+</html>
+
+
 
 
 # 🔐 SentraShield – AI-Powered Cloud Security Kit
