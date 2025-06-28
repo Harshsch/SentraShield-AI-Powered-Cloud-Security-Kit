@@ -1,3 +1,43 @@
+sentrashield/
+├── README.md                          # Project overview and usage instructions
+├── LICENSE                            # Open-source license (e.g., MIT or Apache 2.0)
+│
+├── modules/                           # Core functional modules
+│   ├── anomaly-detector/              # ML-based log anomaly detection
+│   │   ├── lambda_handler.py
+│   │   ├── train_model.py
+│   │   ├── model/
+│   │   │   └── isolation_forest.pkl
+│   │   ├── logs/
+│   │   │   └── sample_logs.csv
+│   │   ├── requirements.txt
+│   │   └── cloudwatch_event.json
+│   │
+│   ├── vulnerability-scanner/         # Web vulnerability scanning engine
+│   │   ├── scanner.py
+│   │   └── test_urls.txt
+│   │
+│   └── input-validator/               # Web form security module
+│       ├── index.html
+│       ├── input-validator.js
+│       └── firebase/
+│           ├── index.js
+│           └── firebase.json
+│
+├── core/                              # Infrastructure automation and DevSecOps
+│   └── ci-cd/
+│       ├── github-actions/
+│       │   └── security-pipeline.yml  # GitHub Actions pipeline for automated security checks
+│       └── terraform/                 # (Optional) IaC setup for cloud deployment
+│           ├── main.tf
+│           └── variables.tf
+│
+├── docs/                              # Documentation and research materials
+│   ├── architecture-diagram.png       # System architecture or component flow
+│   ├── research-outline.md            # Paper draft or journal write-up
+│   └── patent-draft.md                # Initial outline for patent submission
+
+
 # 🔐 SentraShield – AI-Powered Cloud Security Kit
 
 > 🚀 Free-tier friendly · Serverless · Modular · AI-Powered
