@@ -2,29 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SentraShield | Secure Input Form</title>
-  <script defer src="input-validator.js"></script>
+  <title>🛡️ SentraShield: Secure Input Validator</title>
   <style>
-    body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
-    input, textarea { width: 100%; padding: 10px; margin: 8px 0; }
-    .warning { color: red; font-weight: bold; }
-    .success { color: green; font-weight: bold; }
-    button { padding: 10px 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      max-width: 600px;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #feedback {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .safe {
+      color: green;
+    }
+    .warning {
+      color: red;
+    }
   </style>
 </head>
 <body>
   <h1>🛡️ SentraShield: Secure Input Validator</h1>
 
-  <form id="secureForm">
+  <form id="secure-form">
     <label for="username">Username</label>
-    <input type="text" id="username" required>
+    <input type="text" id="username" required />
 
     <label for="comment">Comment</label>
     <textarea id="comment" rows="4" required></textarea>
 
-    <div id="feedback" class="warning"></div>
+    <div id="feedback"></div>
 
     <button type="submit">Submit</button>
   </form>
+
+  <script src="input-validator.js"></script>
 </body>
 </html>
+

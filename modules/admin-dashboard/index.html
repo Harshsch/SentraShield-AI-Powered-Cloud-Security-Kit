@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📊 SentraShield Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>📊 SentraShield Admin Dashboard</h1>
+  </header>
+
+  <main>
+    <!-- Secure Logs -->
+    <section class="panel">
+      <h2>📝 Recent Secure Logs</h2>
+      <input type="text" id="log-search" placeholder="🔎 Search logs...">
+      <button id="export-logs">📥 Export CSV</button>
+      <div class="table-wrapper">
+        <table id="logs-table">
+          <thead>
+            <tr>
+              <th>IP</th>
+              <th>Comment</th>
+              <th>Username</th>
+              <th>ID</th>
+              <th>Reason</th>
+              <th>Timestamp</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Alerts -->
+    <section class="panel">
+      <h2>🚨 Anomaly Alerts</h2>
+      <div class="controls">
+        <label>🔍 Filter by Severity:</label>
+        <select id="alert-severity-filter">
+          <option value="ALL">ALL</option>
+          <option value="HIGH">HIGH</option>
+          <option value="MEDIUM">MEDIUM</option>
+          <option value="LOW">LOW</option>
+        </select>
+
+        <label>📅 From:</label>
+        <input type="date" id="date-from">
+
+        <label>To:</label>
+        <input type="date" id="date-to">
+
+        <button id="export-alerts">📥 Export CSV</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="alerts-table">
+          <thead>
+            <tr>
+              <th>IP</th>
+              <th>Comment</th>
+              <th>Reason</th>
+              <th>Severity</th>
+              <th>Timestamp</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Chart container -->
+    <section class="panel">
+      <h2>📈 Alert Trends</h2>
+      <canvas id="alert-chart" height="100"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SentraShield</p>
+  </footer>
+
+  <!-- 🔊 Audio for real-time alert -->
+  <audio id="alert-audio" src="high_alert.mp3" preload="auto"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
